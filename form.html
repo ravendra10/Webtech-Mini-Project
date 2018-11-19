@@ -1,0 +1,109 @@
+<!DOCTYPE html>
+<html>
+<head>
+	<title>Register</title>
+</head>
+<link rel="stylesheet" type="text/css" href="style.css">
+
+<body class='body'>
+
+<header>
+  <h2 > Sports Network <input id="input" type="text" placeholder="Search">
+  </h2>
+</header>
+<div id="div1" align="center" style="background-color: transparent; ">
+<ul class="sidenav" style="background-color: transparent;">
+
+  <li><a  href="main.html">Home</a></li>
+  <li><a  href="NBA.html">NBA</a></li>
+  <li><a href="football.html">SOCCER</a></li>
+  <li><a href="webtech project.html">CRICKET</a></li>
+  <li><a class="active" href="Signup">SIGN UP</a></li>
+</ul>
+
+
+<div>
+
+	<h1 align="center" style="font-family: Bahnschrift Light;">Sports Network</h1>
+	<h2 align="center" style="font-family: Lucida Sans Unicode;">Enter Your Details</h2>
+
+<div class="sign">
+<form method="POST" action="main.php" style="font-family: Verdana;">
+	
+	<br><input type="text" name="Name" placeholder="Name"><br>
+	
+	
+	<br><input type="email" name="Email" placeholder="Email"><br>
+	
+	<br><input type="text" name="Username" placeholder="Username"><br>
+
+
+	<br><input type="password" name="Password" placeholder="Password"><br>
+	
+	
+	<br><input type="password" name="cPassword" placeholder="Confirm Password"><br>
+	
+	<h5 align="center">Select 1st sport preference : </h5>
+	<select id="select" name="sport" style="margin-left: 10px">
+		<option onclick="select()">Football</option>
+		<option onclick="select()">Cricket</option>
+		<option onclick= "select()">Basketball</option>
+	</select>
+	<div class="sign" id="divmain"></div>
+	<br>
+	<h5 align="center">Do you want us to notify you about recent updates : </h5><br>
+	<h5 align="center"> YES</h5><input align="center" type="radio" id="b" name="notify" value="Yes" checked><br>
+	<h5 align="center">NO</h5><input align="center"type="radio" id="b" name="notify" value="No"><br>
+	<br>
+	<br>
+
+	<p> <input type="submit" id = "a" name="Signup" value="Submit"> <input type="reset" id="a" name="reset" value="Reset"></p>
+</form>
+
+</div>
+
+<script>
+	function select(){
+	if(document.getElementById('text')!=null){
+		var a = document.getElementById('text');
+		a.remove();
+	}
+	var select = document.getElementById('select');
+	var val = select.value;
+	if(val=='Cricket'){
+		document.body.style.backgroundImage = "url('backcric.jpg')";
+		document.body.style.backgroundRepeat="none";
+		document.body.style.borderImageRepeat = "none";
+
+	}
+	if(val=='Basketball'){
+		document.body.style.backgroundImage = "url('backbasket.jpg')";
+		document.body.style.backgroundRepeat="none";
+		document.body.style.borderImageRepeat = "none";
+
+	}
+	if(val=='Football'){
+		document.body.style.backgroundImage = "url('backFoot.jpg')";
+		document.body.style.backgroundRepeat="none";
+		document.body.style.borderImageRepeat = "none";
+
+	}
+
+	var old = document.createElement("textarea");
+	var d = document.getElementById("divmain");
+	old.cols="60";
+	old.rows = '1';
+	//old.value="team";
+	old.placeholder= "Enter your preffered " + val + " team/Country";
+	old.style.padding = "15px";
+	old.style.marginLeft = "150px";
+	old.id = "text";
+	old.class="sign";
+	d.appendChild(old);
+
+
+	}
+</script>
+</body>
+
+</html>

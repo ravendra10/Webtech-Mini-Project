@@ -1,0 +1,171 @@
+<style>
+body {font-family: Verdana, sans-serif; margin: 0;}
+h2{font-family: Bookman Old Style;
+    margin-left: 20px;}
+
+.body{
+	
+	position: relative;
+	background-repeat: no-repeat;
+	border-image-repeat: none;
+	background-size: cover;
+	background-position: center center;
+
+	}
+
+body {margin: 0; border-image-repeat: none;}
+
+
+ul.sidenav {
+   font-family: Verdana, sans-serif; margin:0;
+    list-style-type: none;
+    margin: 0;
+    padding: 0;
+    width: 25%;
+    background-color: #f1f1f1;
+    position: fixed;
+    height: 100%;
+    overflow: auto;
+    -webkit-animation: mymove 5s infinite; /* Safari 4.0 - 8.0 */
+    animation: mymove 5s infinite;
+	animation: example 5s linear 2s infinite alternate;
+}
+
+@-webkit-keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+/* Standard syntax */
+@keyframes mymove {
+    from {left: 0px;}
+    to {left: 300px;}
+}
+
+ul.sidenav li a {
+    display: block;
+    color: #000;
+    padding: 8px 16px;
+    text-decoration: none;
+}
+ 
+ul.sidenav li a.active {
+    background-color: #4CAF50;
+    color: white;
+}
+
+ul.sidenav li a:hover:not(.active) {
+    background-color: #555;
+    color: white;
+}
+
+div.content {
+    margin-left: 25%;
+    padding: 1px 16px;
+    height: 1000px;
+}
+
+@media screen and (max-width: 6000px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+
+@media screen and (max-width: 400px) {
+    ul.sidenav {
+        width: 100%;
+        height: auto;
+        position: relative;
+    }
+    ul.sidenav li a {
+        float: left;
+        padding: 15px;
+    }
+    div.content {margin-left: 0;}
+}
+#div1 {animation-timing-function: linear;
+/*position: fixed;*/
+}
+
+ 
+
+p{
+
+	font-family: Bookman Old Style;
+	font-size: 50px;
+
+}
+.sign{
+	
+	border: none;
+	margin-left: 15%;
+	margin-right:20%;
+	margin-top: 5%;
+	margin-bottom: 0%;
+}
+
+
+.but{
+	padding: 10px;
+	background-color: #4CAF50;
+	border-style: none;
+
+}
+.but:hover{
+	background-color: #4CBF50;
+}
+
+select{
+	align-self: center;
+	margin-left: 40%;
+	padding: 10px;
+	border: solid 0.5px;
+	background-color: #FFFFF0;
+	font-size: 25px;
+	border-color: #4CAF50;
+
+}
+
+#text{
+	align-self: center;
+	margin-left: 40%;
+	padding: 10px;
+	border: solid 0.5px;
+	background-color: #FFFFF0;
+	
+	border-color: #4CAF50;
+}
+
+input{
+	border: solid 0.5px;
+	background-color: #FFFFF0;
+	padding: 20px;
+	border-color: #4CAF50;
+}
+
+#input {
+    width: 30%;
+    padding: 12px 20px;
+    margin: 8px 35%;
+    box-sizing: border-box;
+}
+#a{
+	background-color:#4CAF50;
+}
+
+#a:hover{
+	background-color: #4DBF50;
+}
+
+#b{
+	margin-left: none;
+}
+
+</style>
